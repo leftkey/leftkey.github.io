@@ -102,90 +102,52 @@
       <content type="html"><![CDATA[<hr>
 <h3 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h3><ol>
 <li><a href="http://www.swiper.com.cn/" target="_blank" rel="external">swiper 3</a>开源、免费、强大的移动端触摸滑动插件</li>
-</ol>
-<ol>
 <li><a href="http://2.swiper.com.cn/" target="_blank" rel="external">swiper 2</a>相对于swiper 3,版本较老,不过能兼容到IE的低版本</li>
-</ol>
-<ol>
 <li><a href="http://kenwheeler.github.io/slick/" target="_blank" rel="external">slick.js</a>国外一款简单的轮播幻灯片插件</li>
-</ol>
-<ol>
 <li><a href="https://amazingslider.com/" target="_blank" rel="external">Amazing Slider</a>超强的图片轮播滑块制作工具</li>
 </ol>
 <hr>
 <h3 id="音频视频"><a href="#音频视频" class="headerlink" title="音频视频"></a>音频视频</h3><ol>
 <li><a href="http://www.jplayer.cn/" target="_blank" rel="external">jPlayer.js</a>基于HTML5/Flash的音频、视频播放器</li>
-</ol>
-<ol>
 <li><a href="https://github.com/Bilibili/flv.js" target="_blank" rel="external">flv.js</a>B站的视频播放器内核</li>
-</ol>
-<ol>
 <li><a href="http://videojs.com/" target="_blank" rel="external">video.js</a>网页上嵌入视频播放器的JS库</li>
 </ol>
 <hr>
 <h3 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h3><ol>
 <li><a href="http://momentjs.cn/" target="_blank" rel="external">moment.js</a>JavaScript 日期处理类库</li>
-</ol>
-<ol>
 <li><a href="https://github.com/sbstjn/timesheet.js" target="_blank" rel="external">timesheet.js</a>时间表(考勤表)插件</li>
 </ol>
 <hr>
 <h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><ol>
-<li><a href="http://prismjs.com/" target="_blank" rel="external">prism.js</a> 代码高亮插件</li>
+<li><a href="http://prismjs.com/" target="_blank" rel="external">prism.js</a> 代码高亮插件  </li>
 </ol>
 <hr>
 <h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><ol>
-<li><p><a href="http://blog.csdn.net/z69183787/article/details/12648317" target="_blank" rel="external">insertContent</a>在文本框光标位置插入内容并选中</p>
-</li>
-<li><p><a href="https://clipboardjs.com/" target="_blank" rel="external">clipboard.js</a>将内容复制或剪切到剪切板</p>
-</li>
-<li><p><a href="http://jaywcjlove.github.io/hotkeys/" target="_blank" rel="external">hotkeys</a>用于捕获键盘输入和输入的组合键的JS库</p>
-</li>
-<li><p><a href="http://nosir.github.io/cleave.js/" target="_blank" rel="external">cleave.js</a>输入时格式化你的<code>&lt;input/&gt;</code>标签里面的内容</p>
-</li>
-<li><p><a href="http://stringjs.com/" target="_blank" rel="external">string.js</a>字符串扩展插件</p>
-</li>
-<li><p><a href="http://medialize.github.io/URI.js/" target="_blank" rel="external">URL.js</a>url操作库</p>
-</li>
+<li><a href="http://blog.csdn.net/z69183787/article/details/12648317" target="_blank" rel="external">insertContent</a>在文本框光标位置插入内容并选中</li>
+<li><a href="https://clipboardjs.com/" target="_blank" rel="external">clipboard.js</a>将内容复制或剪切到剪切板</li>
+<li><a href="http://jaywcjlove.github.io/hotkeys/" target="_blank" rel="external">hotkeys</a>用于捕获键盘输入和输入的组合键的JS库</li>
+<li><a href="http://nosir.github.io/cleave.js/" target="_blank" rel="external">cleave.js</a>输入时格式化你的<code>&lt;input/&gt;</code>标签里面的内容</li>
+<li><a href="http://stringjs.com/" target="_blank" rel="external">string.js</a>字符串扩展插件</li>
+<li><a href="http://medialize.github.io/URI.js/" target="_blank" rel="external">URL.js</a>url操作库</li>
 </ol>
 <hr>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><ol>
 <li><a href="https://github.com/feimosi/baguetteBox.js" target="_blank" rel="external">baguetteBox.js</a>响应式画廊插件</li>
-</ol>
-<ol>
 <li><a href="https://sachinchoolur.github.io/lightgallery.js/" target="_blank" rel="external">lightgallery.js</a>jQuery图片展示/幻灯插件</li>
-</ol>
-<ol>
 <li><a href="https://fengyuanchen.github.io/viewerjs/" target="_blank" rel="external">viewer.js</a> jQuery 图像浏览插件</li>
-</ol>
-<ol>
 <li><a href="https://fengyuanchen.github.io/cropperjs/" target="_blank" rel="external">cropper.js</a>jQuery简单且功能强大的图片剪裁插件</li>
-</ol>
-<ol>
 <li><a href="https://fengyuanchen.github.io/photo-editor/" target="_blank" rel="external">photo-editor</a>本地图片编辑器插件</li>
-</ol>
-<ol>
 <li><a href="http://dinbror.dk/blog/blazy/" target="_blank" rel="external">blazy.js</a>轻量级, 滚动懒加载图片的JavaScript库</li>
-</ol>
-<ol>
 <li><a href="https://bevacqua.github.io/dragula/" target="_blank" rel="external">dragula</a>实现拖放的JS库</li>
-</ol>
-<ol>
 <li><a href="http://deepliquid.com/content/Jcrop_Download.html" target="_blank" rel="external">jcrop.js</a>功能强大的 jQuery 图像裁剪插件</li>
-</ol>
-<ol>
 <li><a href="http://alloyteam.github.io/AlloyPhoto/" target="_blank" rel="external">AlloyPhoto</a>腾讯alloyteam团队基于HTML5技术开发的专业级图像处理引擎</li>
 </ol>
 <hr>
 <h3 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h3><ol>
-<li><p><a href="http://echarts.baidu.com/index.html" target="_blank" rel="external">echarts 3</a>百度开发的图表库</p>
-</li>
-<li><p><a href="http://echarts.baidu.com/echarts2/" target="_blank" rel="external">echarts 2</a>相对于echarts3,版本较老,不过能兼容到IE6</p>
-</li>
-<li><p><a href="http://www.chartjs.org/" target="_blank" rel="external">chart.js</a>HTML5 图表绘制工具库</p>
-</li>
-<li><p><a href="https://www.hcharts.cn/" target="_blank" rel="external">highcharts</a>兼容 IE6+、完美支持移动端、图表类型丰富、方便快捷的 HTML5 交互性图表库</p>
-</li>
+<li><a href="http://echarts.baidu.com/index.html" target="_blank" rel="external">echarts 3</a>百度开发的图表库</li>
+<li><a href="http://echarts.baidu.com/echarts2/" target="_blank" rel="external">echarts 2</a>相对于echarts3,版本较老,不过能兼容到IE6</li>
+<li><a href="http://www.chartjs.org/" target="_blank" rel="external">chart.js</a>HTML5 图表绘制工具库</li>
+<li><a href="https://www.hcharts.cn/" target="_blank" rel="external">highcharts</a>兼容 IE6+、完美支持移动端、图表类型丰富、方便快捷的 HTML5 交互性图表库</li>
 </ol>
 <hr>
 <h3 id="弹框"><a href="#弹框" class="headerlink" title="弹框"></a>弹框</h3><ol>
@@ -244,10 +206,8 @@
 <li><a href="https://webrtc.org/" target="_blank" rel="external">WebRTC</a> 网页获取设备摄像头的库</li>
 <li><a href="https://github.com/inspirit/jsfeat" target="_blank" rel="external">jsFeat</a> 处理摄像头获取画面后的库</li>
 <li><a href="http://www.webar.net/" target="_blank" rel="external">WebAr</a> AR开发框架</li>
-<li><a href="https://github.com/jeromeetienne/AR.js" target="_blank" rel="external">AR.js</a> AR开发框架</li>
+<li><a href="https://github.com/jeromeetienne/AR.js" target="_blank" rel="external">AR.js</a> AR开发框架<br>更新中…</li>
 </ol>
-<a id="more"></a>
-<p>更新中…</p>
 ]]></content>
       
         <categories>
