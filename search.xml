@@ -28,6 +28,207 @@
         
     </entry>
     
+    <entry>
+      <title><![CDATA[background-image无法加载本地图片]]></title>
+      <url>/2017/06/24/background-image%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+      <content type="html"><![CDATA[<p><strong>微信小程序 background-image无法加载本地图片</strong><br>    微信小程序中,本地的资源(如图像 字体等)是无法通过wxss(即css)获取的.即便你在PC端的开发者工具上可以,手机上实际应用也是不行的,因为本身小程序就有大小限制,若上传图片,大大增加程序本身大小.<br>    如何引用背景图:</p>
+<ol>
+<li>引用https服务器下的图片作为背景图</li>
+<li>若无服务器,建议使用base64转换图片</li>
+<li>若非要用本地图片,则只能用<image></image>加载图片,其实该标签本质也是将图片作为background-image进行渲染</li>
+</ol>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[禁止微信小程序页面上下滑动]]></title>
+      <url>/2017/03/15/%E7%A6%81%E6%AD%A2%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E4%B8%8A%E4%B8%8B%E6%BB%91%E5%8A%A8/</url>
+      <content type="html"><![CDATA[<p>微信小程序默认每个页面都可以进行上下滑动(类似于上拉下拉拖拽时的刷新效果),当我们开发时,如果不需要个效果,或者如做canvas效果用到的手势与之冲突时,需要将其禁止.<br>方法:<br>只需要在该小程序的页面.json文件中来对本页面的窗口表现进行配置(不是整体的app.json文件),添加配置为<code>&quot;disableScroll&quot;:true</code><br><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html" target="_blank" rel="external">开发手册</a>拖置最下</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[16.04中使用npm安装babel-cli的问题]]></title>
+      <url>/2016/07/04/16-04%E4%B8%AD%E4%BD%BF%E7%94%A8npm%E5%AE%89%E8%A3%85babel-cli%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<p>在 Ubuntu 16.04中使用npm安装babel-cli时，使用命令</p>
+<pre><code>$ npm install -g babel-cli
+</code></pre><p>成功后,输入babel命令后，出现</p>
+<pre><code>程序 &apos;babel&apos; 已包含在下列软件包中：
+* babel-1.4.0
+* openbabel
+请尝试：sudo apt install &lt;选定的软件包&gt;
+</code></pre><p>？？？<br>解决方法：<br>因为全局安装后，安装的包并不能在命令行运行，所以每次输入babel命令不起作用，这个时候就要添加环境变量。<br>打开终端在终端中输入下面命令：</p>
+<pre><code>sudo gedit ~/.bashrc
+</code></pre><p>在打开的文件最后一行添上</p>
+<pre><code>export PATH=$PATH:/opt/node-v6.xx.xx-linux-x64/bin （注：node-v6.xx.xx-linux-x64为node目录）
+</code></pre><p>这样安装的模块就可以在命令行使用了。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WEB前端开发中常用的一些JS插件、工具、引擎]]></title>
+      <url>/2016/05/14/WEB%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9BJS%E6%8F%92%E4%BB%B6%E3%80%81%E5%B7%A5%E5%85%B7%E3%80%81%E5%BC%95%E6%93%8E/</url>
+      <content type="html"><![CDATA[<hr>
+<h3 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h3><ol>
+<li><a href="http://www.swiper.com.cn/" target="_blank" rel="external">swiper 3</a>开源、免费、强大的移动端触摸滑动插件</li>
+</ol>
+<ol>
+<li><a href="http://2.swiper.com.cn/" target="_blank" rel="external">swiper 2</a>相对于swiper 3,版本较老,不过能兼容到IE的低版本</li>
+</ol>
+<ol>
+<li><a href="http://kenwheeler.github.io/slick/" target="_blank" rel="external">slick.js</a>国外一款简单的轮播幻灯片插件</li>
+</ol>
+<ol>
+<li><a href="https://amazingslider.com/" target="_blank" rel="external">Amazing Slider</a>超强的图片轮播滑块制作工具</li>
+</ol>
+<hr>
+<h3 id="音频视频"><a href="#音频视频" class="headerlink" title="音频视频"></a>音频视频</h3><ol>
+<li><a href="http://www.jplayer.cn/" target="_blank" rel="external">jPlayer.js</a>基于HTML5/Flash的音频、视频播放器</li>
+</ol>
+<ol>
+<li><a href="https://github.com/Bilibili/flv.js" target="_blank" rel="external">flv.js</a>B站的视频播放器内核</li>
+</ol>
+<ol>
+<li><a href="http://videojs.com/" target="_blank" rel="external">video.js</a>网页上嵌入视频播放器的JS库</li>
+</ol>
+<hr>
+<h3 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h3><ol>
+<li><a href="http://momentjs.cn/" target="_blank" rel="external">moment.js</a>JavaScript 日期处理类库</li>
+</ol>
+<ol>
+<li><a href="https://github.com/sbstjn/timesheet.js" target="_blank" rel="external">timesheet.js</a>时间表(考勤表)插件</li>
+</ol>
+<hr>
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><ol>
+<li><a href="http://prismjs.com/" target="_blank" rel="external">prism.js</a> 代码高亮插件</li>
+</ol>
+<hr>
+<h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><ol>
+<li><a href="http://blog.csdn.net/z69183787/article/details/12648317" target="_blank" rel="external">insertContent</a>在文本框光标位置插入内容并选中</li>
+</ol>
+<ol>
+<li><p><a href="https://clipboardjs.com/" target="_blank" rel="external">clipboard.js</a>将内容复制或剪切到剪切板</p>
+</li>
+<li><p><a href="http://jaywcjlove.github.io/hotkeys/" target="_blank" rel="external">hotkeys</a>用于捕获键盘输入和输入的组合键的JS库</p>
+</li>
+<li><p><a href="http://nosir.github.io/cleave.js/" target="_blank" rel="external">cleave.js</a>输入时格式化你的<code>&lt;input/&gt;</code>标签里面的内容</p>
+</li>
+<li><p><a href="http://stringjs.com/" target="_blank" rel="external">string.js</a>字符串扩展插件</p>
+</li>
+<li><p><a href="http://medialize.github.io/URI.js/" target="_blank" rel="external">URL.js</a>url操作库</p>
+</li>
+</ol>
+<hr>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><ol>
+<li><a href="https://github.com/feimosi/baguetteBox.js" target="_blank" rel="external">baguetteBox.js</a>响应式画廊插件</li>
+</ol>
+<ol>
+<li><a href="https://sachinchoolur.github.io/lightgallery.js/" target="_blank" rel="external">lightgallery.js</a>jQuery图片展示/幻灯插件</li>
+</ol>
+<ol>
+<li><a href="https://fengyuanchen.github.io/viewerjs/" target="_blank" rel="external">viewer.js</a> jQuery 图像浏览插件</li>
+</ol>
+<ol>
+<li><a href="https://fengyuanchen.github.io/cropperjs/" target="_blank" rel="external">cropper.js</a>jQuery简单且功能强大的图片剪裁插件</li>
+</ol>
+<ol>
+<li><a href="https://fengyuanchen.github.io/photo-editor/" target="_blank" rel="external">photo-editor</a>本地图片编辑器插件</li>
+</ol>
+<ol>
+<li><a href="http://dinbror.dk/blog/blazy/" target="_blank" rel="external">blazy.js</a>轻量级, 滚动懒加载图片的JavaScript库</li>
+</ol>
+<ol>
+<li><a href="https://bevacqua.github.io/dragula/" target="_blank" rel="external">dragula</a>实现拖放的JS库</li>
+</ol>
+<ol>
+<li><a href="http://deepliquid.com/content/Jcrop_Download.html" target="_blank" rel="external">jcrop.js</a>功能强大的 jQuery 图像裁剪插件</li>
+</ol>
+<ol>
+<li><a href="http://alloyteam.github.io/AlloyPhoto/" target="_blank" rel="external">AlloyPhoto</a>腾讯alloyteam团队基于HTML5技术开发的专业级图像处理引擎</li>
+</ol>
+<hr>
+<h3 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h3><ol>
+<li><p><a href="http://echarts.baidu.com/index.html" target="_blank" rel="external">echarts 3</a>百度开发的图表库</p>
+</li>
+<li><p><a href="http://echarts.baidu.com/echarts2/" target="_blank" rel="external">echarts 2</a>相对于echarts3,版本较老,不过能兼容到IE6</p>
+</li>
+<li><p><a href="http://www.chartjs.org/" target="_blank" rel="external">chart.js</a>HTML5 图表绘制工具库</p>
+</li>
+<li><p><a href="https://www.hcharts.cn/" target="_blank" rel="external">highcharts</a>兼容 IE6+、完美支持移动端、图表类型丰富、方便快捷的 HTML5 交互性图表库</p>
+</li>
+</ol>
+<hr>
+<h3 id="弹框"><a href="#弹框" class="headerlink" title="弹框"></a>弹框</h3><ol>
+<li><a href="http://t4t5.github.io/sweetalert/" target="_blank" rel="external">SweetAlert</a> 一款不需要jQuery支持的原生js提示框</li>
+<li><a href="https://limonte.github.io/sweetalert2/" target="_blank" rel="external">SweetAlert 2</a> SweetAlert升级版</li>
+<li><a href="https://popper.js.org/" target="_blank" rel="external">Popper.js</a> 轻量级 tooltips 提示插件</li>
+<li><a href="http://aui.github.io/artDialog/" target="_blank" rel="external">artDialog</a> 一个精巧的web对话框组件</li>
+<li><a href="http://aui.github.io/angular-popups/" target="_blank" rel="external">Angular-popups</a> 基于 AngularJS 的浮层组件，由 artDialog 演进而来</li>
+<li><a href="http://layer.layui.com/" target="_blank" rel="external">layer.js</a> web弹层组件</li>
+<li><a href="http://nickersoft.github.io/push.js/" target="_blank" rel="external">Push.js</a> JS页面通知插件</li>
+</ol>
+<hr>
+<h3 id="滚动条"><a href="#滚动条" class="headerlink" title="滚动条"></a>滚动条</h3><ol>
+<li><a href="http://www.areaaperta.com/nicescroll/" target="_blank" rel="external">Jquery.Nicescroll.js</a> 浏览器滚动条美化样式插件</li>
+<li><a href="http://rocha.la/jQuery-slimScroll" target="_blank" rel="external">Jquery.slimScroll.js</a> 用于模拟传统的浏览器滚动条(竖向)</li>
+</ol>
+<hr>
+<h3 id="动画游戏"><a href="#动画游戏" class="headerlink" title="动画游戏"></a>动画游戏</h3><ol>
+<li><a href="http://anime-js.com/" target="_blank" rel="external">anime.js</a> JS动画引擎</li>
+<li><a href="https://threejs.org/" target="_blank" rel="external">three.js</a> JS 3D引擎</li>
+<li><a href="https://two.js.org/" target="_blank" rel="external">two.js</a> 基于Web的2D绘图引擎</li>
+<li><a href="http://maxwellito.github.io/vivus/" target="_blank" rel="external">vivus</a> 使SVG绘制动画引擎</li>
+<li><a href="https://christinecha.github.io/choreographer-js/" target="_blank" rel="external">Choreographer-js</a> JS动画引擎</li>
+<li><a href="http://www.phaserengine.com/" target="_blank" rel="external">Phaser</a> HTML5游戏框架</li>
+<li><a href="http://www.pixijs.com/" target="_blank" rel="external">Pixi</a> HTML5游戏引擎</li>
+<li><a href="http://prinzhorn.github.io/skrollr/" target="_blank" rel="external">skroller.js</a> JS滚动视差插件</li>
+<li><a href="https://greensock.com/" target="_blank" rel="external">GSAP</a> 据说动画性能高于JQuery的库,<a href="https://greensock.com/tweenlite" target="_blank" rel="external">TweenLite.js</a>为其核心动画引擎</li>
+<li><a href="https://github.com/kripken/ammo.js/" target="_blank" rel="external">ammo.js</a> JS物理引擎</li>
+<li><a href="http://www.cannonjs.org/" target="_blank" rel="external">cannonjs</a> JS物理引擎</li>
+</ol>
+<hr>
+<h3 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h3><ol>
+<li><a href="https://larsjung.de/jquery-qrcode/" target="_blank" rel="external">qrcode</a> 基于JQuery的二维码生成插件</li>
+</ol>
+<hr>
+<h3 id="手势"><a href="#手势" class="headerlink" title="手势"></a>手势</h3><ol>
+<li><a href="http://hammerjs.github.io/" target="_blank" rel="external">hammer.js</a> 移动端手势库</li>
+<li><a href="https://github.com/hammerjs/jquery.hammer.js" target="_blank" rel="external">jquery.hammer.js</a> 适用于JQuery的hammer.js插件</li>
+<li><a href="http://ryanmullins.github.io/angular-hammer/" target="_blank" rel="external">AngularHammer</a> 适用于Angular的hammer.js插件</li>
+</ol>
+<hr>
+<h3 id="屏幕"><a href="#屏幕" class="headerlink" title="屏幕"></a>屏幕</h3><ol>
+<li><a href="https://sindresorhus.com/screenfull.js/" target="_blank" rel="external">screenfull.js</a> 浏览器全屏显示的插件</li>
+<li><a href="http://alvarotrigo.com/fullPage/" target="_blank" rel="external">fullpage.js</a> 全屏滚动插件</li>
+</ol>
+<hr>
+<h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
+<li><a href="http://jaywcjlove.github.io/store.js/" target="_blank" rel="external">store.js</a> 本地存储localstorage的插件</li>
+<li><a href="http://jaywcjlove.github.io/cookie.js/" target="_blank" rel="external">cookie.js</a> 本地存储cookie的插件</li>
+<li><a href="https://localforage.github.io/localForage/" target="_blank" rel="external">localForage</a> 针对IndexedDB、WebSQL和localStorage离线存储的插件</li>
+</ol>
+<hr>
+<h3 id="虚拟现实-技术尚未成熟-慎用"><a href="#虚拟现实-技术尚未成熟-慎用" class="headerlink" title="虚拟现实(技术尚未成熟,慎用)"></a>虚拟现实(技术尚未成熟,慎用)</h3><ol>
+<li><a href="https://aframe.io/" target="_blank" rel="external">Aframe</a> 基于three.js和WebVR开发的VR框架</li>
+<li><a href="https://w3c.github.io/webvr/" target="_blank" rel="external">WebVR</a> 火狐团队致力开发的网页VR框架</li>
+<li><a href="https://webrtc.org/" target="_blank" rel="external">WebRTC</a> 网页获取设备摄像头的库</li>
+<li><a href="https://github.com/inspirit/jsfeat" target="_blank" rel="external">jsFeat</a> 处理摄像头获取画面后的库</li>
+<li><a href="http://www.webar.net/" target="_blank" rel="external">WebAr</a> AR开发框架</li>
+<li><a href="https://github.com/jeromeetienne/AR.js" target="_blank" rel="external">AR.js</a> AR开发框架</li>
+</ol>
+<a id="more"></a>
+<p>更新中…</p>
+]]></content>
+      
+        
+    </entry>
+    
   
   
     
